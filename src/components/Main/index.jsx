@@ -97,7 +97,7 @@ const Main = () => {
             mintConfig={{
               "type":"erc-721",
               "totalPrice": "0.1",
-              "_quantity":"5"
+              "_quantity":"1"
             }}
             />
       </div>
