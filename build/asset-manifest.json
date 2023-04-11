@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4287097c.css",
+    "main.js": "/static/js/main.df26b323.js",
+    "static/js/187.0e70780e.chunk.js": "/static/js/187.0e70780e.chunk.js",
+    "static/js/563.476eb44b.chunk.js": "/static/js/563.476eb44b.chunk.js",
+    "static/js/942.68c3b135.chunk.js": "/static/js/942.68c3b135.chunk.js",
+    "static/js/785.00230b75.chunk.js": "/static/js/785.00230b75.chunk.js",
+    "static/js/419.4c5bd444.chunk.js": "/static/js/419.4c5bd444.chunk.js",
+    "static/js/48.79eae251.chunk.js": "/static/js/48.79eae251.chunk.js",
+    "static/media/back.png": "/static/media/back.1a289afc96104e0a5aa2.png",
+    "static/media/gorilla.gif": "/static/media/gorilla.14c2816499e2e3816528.gif",
+    "static/media/JERS-Tokn.png": "/static/media/JERS-Tokn.f63329c1895edb1376ee.png",
+    "static/media/JTTribesLogo.png": "/static/media/JTTribesLogo.ae20dadda4f13d81544f.png",
+    "index.html": "/index.html",
+    "main.4287097c.css.map": "/static/css/main.4287097c.css.map",
+    "main.df26b323.js.map": "/static/js/main.df26b323.js.map",
+    "187.0e70780e.chunk.js.map": "/static/js/187.0e70780e.chunk.js.map",
+    "785.00230b75.chunk.js.map": "/static/js/785.00230b75.chunk.js.map",
+    "419.4c5bd444.chunk.js.map": "/static/js/419.4c5bd444.chunk.js.map",
+    "48.79eae251.chunk.js.map": "/static/js/48.79eae251.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4287097c.css",
+    "static/js/main.df26b323.js"
+  ]
+}
