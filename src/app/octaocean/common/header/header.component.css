@@ -1,0 +1,37 @@
+.bg-button-octaocean-gradient-blue {
+  color: rgba(255, 255, 255, 1) !important;
+  background: rgba(5, 0, 90, 1) !important;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(9, 9, 121, 0.5) 35%, rgba(0, 89, 255, 0.5) 100%) !important;
+}
+
+.bg-button-octaocean-gradient-blue:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.bg-button-octaocean-gradient-pink {
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: rgb(160, 0, 107) !important;
+}
+
+.bg-button-octaocean-gradient-pink:hover {
+  background-color: rgb(160, 0, 107) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.rounded-blue {
+  background-color: #0b4192 !important;
+  border: 1px solid #0b4192 !important;
+  border-radius: 25px !important;
+}
+
+.rounded-pink {
+  background-color: rgb(160, 0, 107) !important;
+  border: 1px solid rgb(160, 0, 107) !important;
+  border-radius: 25px !important;
+}
+
+.dropdown-menu {
+  background-color: #0b4192 !important;
+  border: 2px solid #0b4192 !important;
+  border-radius: 10px !important;
+}

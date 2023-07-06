@@ -1,0 +1,40 @@
+<div class="card card-border-octaocean" *ngIf="cardProps.visible">
+	<div class="card-body">
+		<div class="row white-text-octaocean pb-4">
+			<div class="col-md-8">
+				<strong class="h4">{{ cardProps.title }}</strong>
+			</div>
+			<div class="col-md-4">
+				<img *ngIf="cardProps.titleIcon != ''" [src]="cardProps.titleIcon" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-auto">
+				<span class="badge" [ngStyle]="{'background': cardProps.subtitleBackground}">
+					<i *ngIf="cardProps.subtitleIcon != ''" class="{{ cardProps.subtitleIcon }} bg-transparent fw-bolder"></i>
+					&nbsp;&nbsp;
+					{{ cardProps.subtitle }}
+				</span>
+			</div>
+			<div class="col-md"></div>
+		</div>
+		<table class="table table-borderless">
+			<thead>
+				<tr>
+					<th class="white-text-octaocean" *ngFor="let title of cardProps.contentHeader">{{ title }}</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="white-text-octaocean" *ngFor="let element of cardProps.contentBody">{{ element }}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="d-grid gap-2">
+			<a [routerLink]="cardProps.buttonUrl" class="btn bg-button-octaocean-gradient-pink rounded-pink fw-bolder white-text-octaocean mt-4 px-5">
+				{{ cardProps.buttonName }}
+				<i class="{{ cardProps.buttonIcon }} bg-transparent fw-bolder white-text-octaocean mx-2"></i>
+			</a>
+		</div>
+	</div>
+</div>

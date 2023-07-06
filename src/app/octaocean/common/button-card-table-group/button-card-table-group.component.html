@@ -1,0 +1,17 @@
+<div class="container-fluid py-10 px-20">
+  <div class="row pb-20 text-center">
+    <p class="white-text-octaocean h1 pb-3">{{ cards.title }}</p>
+    <span class="muted-text-octaocean h5">{{ cards.subtitle }}</span>
+  </div>
+  <div class="row row-cols-1 row-cols-md-{{ cards.cardsPerRow }} g-4">
+    <div class="col" *ngFor="let card of cards.cards">
+      <app-button-card-table [cardProps]="card"></app-button-card-table>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="btn bg-button-octaocean-gradient-pink btn-lg rounded-pink fw-bolder mt-5 px-5 py-2"
+      [routerLink]="cards.buttonUrl">{{ cards.buttonName }}
+      <i *ngIf="cards.buttonIcon != ''" class="{{ cards.buttonIcon }} bg-transparent"></i>
+    </a>
+  </div>
+</div>
