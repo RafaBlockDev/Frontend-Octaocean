@@ -16,8 +16,8 @@ export class HomeService {
 
   constructor(private readonly http: HttpClient) { }
 
-  getHome(): Observable<Home> {
+  getHome(): Observable<Array<Home>> {
     let strUrl = `${this.baseUrl}/get-home`;
-    return this.http.get<Home>(strUrl);
+    return this.http.get<Array<Home>>(strUrl);
   }
 }

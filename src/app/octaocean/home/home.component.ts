@@ -280,14 +280,17 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.homeService.getHome()
-      .subscribe((res: Home) => {
-        this.marquees = res.marquees;
-        this.infoSection = res.infoSection;
-        this.cardsPicture = res.buttonCardInfoPicture;
-        this.cardsInfo = res.buttonCardInfo;
-        this.cardsTable = res.buttonCardTableGroup;
-        this.footer = res.footer;
-      })
+    .subscribe((res: Array<any>) => {
+      let data = res[0].Home;
+      if (data) {
+        this.marquees = data.marquees;
+        this.infoSection = data.infoSection;
+        this.cardsPicture = data.buttonCardInfoPicture;
+        this.cardsInfo = data.buttonCardInfo;
+        this.cardsTable = data.buttonCardTableGroup;
+        this.footer = data.footer;
+      }
+    });
   }
 
   ngOnDestroy(): void {
