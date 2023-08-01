@@ -11,6 +11,7 @@ const Home: NextPage = () => {
   // SEPOLIA ADDRESS
   const contractAddress = ""
 
+  // Create buy token with sale contract
   const buySPL = async() => {
     const contract = new ethers.Contract("", "");
   }
