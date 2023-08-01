@@ -1,9 +1,0 @@
-<button class="card bg-dark p-4 zoom" [ngStyle]="{'cursor': 'pointer', 'border-color': cardProps.borderColor, 'border-radius': '10px', 'border-width': '2px'}" *ngIf="cardProps.visible"
-  (click)="clickHandler(cardProps.buttonUrl)">
-  <img src="{{ cardProps.picture }}" class="card-img" alt="{{ cardProps.picture }}">
-  
-    <h3 class="card-title bg-transparent white-text-octaocean">{{ cardProps.title }}</h3>
-    <p class="card-text muted-text-octaocean mt-4 bg-transparent muted-text-octaocean">{{ cardProps.description }}</p>
-    <p class="card-text mt-4 bg-transparent fw-bolder" [ngStyle]="{'color': cardProps.buttonColor }">{{ cardProps.buttonName }}</p>
-  
-</button>
