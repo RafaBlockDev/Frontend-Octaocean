@@ -7,26 +7,22 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
-  mainnet,
-  polygon,
-  optimism,
-  arbitrum,
-  zora,
+  sepolia
 } from 'wagmi/chains';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 
 const { chains, publicClient } = configureChains(
-  [mainnet, polygon, optimism, arbitrum, zora],
+  [sepolia],
   [
-    alchemyProvider({ apiKey: "" }),
+    alchemyProvider({ apiKey: process.env.ALCHEMY_ID as string }),
     publicProvider()
   ]
 );
 
 const { connectors } = getDefaultWallets({
   appName: 'My RainbowKit App',
-  projectId: 'YOUR_PROJECT_ID',
+  projectId: process.env.PROJECT_ID as string,
   chains
 });
 
@@ -39,7 +35,7 @@ const wagmiConfig = createConfig({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
+      <RainbowKitProvider chains={chains} modalSize="compact">
         <Component {...pageProps} />
         </RainbowKitProvider>
     </WagmiConfig>
