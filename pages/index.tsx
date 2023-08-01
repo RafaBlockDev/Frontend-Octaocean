@@ -3,8 +3,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { ethers } from "ethers";
+import abi from "../data/SPL.json";
 
 const Home: NextPage = () => {
+
+  // SEPOLIA ADDRESS
+  const contractAddress = ""
+
+  const buySPL = async() => {
+    const contract = new ethers.Contract("", "");
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -25,7 +35,9 @@ const Home: NextPage = () => {
         <ConnectButton />
 
         <div className='m-12'>
-          <button className='bg-blue-600 rounded-md py-2 px-10 text-white	font-sans text-base subpixel-antialiased'>
+          <button className='bg-blue-600 rounded-md py-2 px-10 text-white	font-sans text-base subpixel-antialiased'
+            /*onClick={""}*/
+          >
               BUY
           </button>
         </div>
